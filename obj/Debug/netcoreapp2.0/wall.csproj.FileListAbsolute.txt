@@ -1,0 +1,10 @@
+/Users/rose/Desktop/DojoAssignments/netCore/ASP.Net/wall/bin/Debug/netcoreapp2.0/wall.deps.json
+/Users/rose/Desktop/DojoAssignments/netCore/ASP.Net/wall/bin/Debug/netcoreapp2.0/wall.runtimeconfig.json
+/Users/rose/Desktop/DojoAssignments/netCore/ASP.Net/wall/bin/Debug/netcoreapp2.0/wall.runtimeconfig.dev.json
+/Users/rose/Desktop/DojoAssignments/netCore/ASP.Net/wall/bin/Debug/netcoreapp2.0/wall.dll
+/Users/rose/Desktop/DojoAssignments/netCore/ASP.Net/wall/bin/Debug/netcoreapp2.0/wall.pdb
+/Users/rose/Desktop/DojoAssignments/netCore/ASP.Net/wall/obj/Debug/netcoreapp2.0/wall.csproj.CoreCompileInputs.cache
+/Users/rose/Desktop/DojoAssignments/netCore/ASP.Net/wall/obj/Debug/netcoreapp2.0/wall.AssemblyInfoInputs.cache
+/Users/rose/Desktop/DojoAssignments/netCore/ASP.Net/wall/obj/Debug/netcoreapp2.0/wall.AssemblyInfo.cs
+/Users/rose/Desktop/DojoAssignments/netCore/ASP.Net/wall/obj/Debug/netcoreapp2.0/wall.dll
+/Users/rose/Desktop/DojoAssignments/netCore/ASP.Net/wall/obj/Debug/netcoreapp2.0/wall.pdb

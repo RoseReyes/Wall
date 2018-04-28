@@ -1,0 +1,62 @@
+@{
+    ViewData["Title"] = "The Wall";
+}
+@model wall.Models.Messages
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand text-white" href="#">Welcome @ViewBag.ReturnActiveName!</a>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link text-white" href="/logout">Logout</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <h4 class="mt-5 mb-4">Post a message</h4>
+  <form action ="wall" method ="post">
+  <textarea class="form-control vresize" rows="5" name="message"></textarea>
+  <div class="row mt-3">
+        <div class="ml-auto">
+            <button type="submit" class="btn btn-success ml-auto">Post message</button>
+        </div>
+    </div>
+  </form>
+
+ @foreach(var message in @ViewBag.MessageDisplay)
+{           
+    <div class="row justify-content-start mt-5">
+        <div class="col-sm"><h4>@message["name"] - @message["date"].ToString("MMM dd, yyyy")</h4></div>
+    </div>
+    <div class="row justify-content-start">
+        <div class="col-sm"><h4>@message["message"]</h4></div>
+    </div>
+     @foreach(var comments in @ViewBag.CommentDisplay)
+    {
+        if(@comments["message_id"] == @message["message_id"])
+        {
+            <div class="row justify-content-start ml-auto">
+                <div class="col-sm">@comments["comment_name"] - @comments["comment_date"].ToString("MMM dd, yyyy")</div>
+            </div>
+            <div class="row justify-content-start ml-3">
+                <div class="col-sm">@comments["comment"]</div>
+            </div>
+        }
+    }
+    <h4 class="mt-5 mb-4">Post a comment</h4>
+    <form action= "comments" method = "post">
+        <input type="hidden" value="@message["message_id"]" name="messageid">
+        <textarea class="form-control" rows="3" name="comments"></textarea>
+        <div class="row mt-3">
+            <div class="ml-auto">
+                <button type="submit" class="btn btn-success ml-auto">Post comment</button>
+            </div>
+        </div>
+    </form>
+   
+}
+</div>
+ 
+       
+
+   
+
+
